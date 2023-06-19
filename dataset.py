@@ -67,6 +67,6 @@ class DatasetZRR(Dataset):
             if id in filter_imageid:
                 print(f'skipping imageid {id}')
                 continue
-            copyfile(os.path.join(sourcedir, 'train', 'huawei_raw', f'{id}.png), os.path.join(sourcedir, 'refined', 'train', 'huawei_raw', f'{sample_idx}.png'))
+            copyfile(os.path.join(sourcedir, 'train', 'huawei_raw', f'{id}.png'), os.path.join(sourcedir, 'refined', 'train', 'huawei_raw', f'{sample_idx}.png'))
             copyfile(os.path.join(sourcedir, 'train', 'canon', f'{id}.png'), os.path.join(sourcedir, 'refined', 'train', 'canon', f'{sample_idx}.png'))
             sample_idx += 1
